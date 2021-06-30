@@ -317,7 +317,7 @@
         justify-content: center;
         align-items: center;
         padding: 50px 0;
-        background: url(/img/bgform.jpg) no-repeat;
+        background: url(../img/bgform.jpg) no-repeat;
     }
     
     #brands .discount .text {
@@ -386,7 +386,7 @@
         display: block;
         width: 100%;
         height: 100%;
-        background: url(/img/brand.png) no-repeat;
+        background: url(../img/brand.png) no-repeat;
     }
     
     #brands .brands ul li:nth-child(1) a {
@@ -423,7 +423,7 @@
     footer .f-right {
         width: 50%;
         height: 100%;
-        background: url(/img/payment.png) no-repeat center;
+        background: url(../img/payment.png) no-repeat center;
     }
     /************************    STart   CSS mobile  ************************************/
     
