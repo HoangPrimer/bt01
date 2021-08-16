@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+p,
+span {
+    font-size: 1.3rem;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: block;
+}
+
+header {
+    float: left;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.header__logo {
+    width: 30%;
+    display: block;
+    float: left;
+    text-align: center;
+}
+
+.header__logo img {
+    width: 80px;
+    height: 80px;
+}
+
+.hearder__title {
+    width: 70%;
+    float: left;
+}
+
+.hearder__title h1 {
+    text-transform: uppercase;
+    color: orange;
+    margin-top: 26px;
+    padding: auto;
+}
+
+
+/* nav */
+
+nav {
+    width: 100%;
+    float: left;
+    background-color: rgb(30, 190, 97);
+}
+
+nav ul {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    display: inline-block;
+    width: calc( 100% / 7);
+    text-align: center;
+    padding: 10px 0;
+    transition: .5s;
+}
+
+nav ul li:hover {
+    background-color: rgb(82, 124, 240);
+}
+
+nav ul li a {
+    font-size: 16px;
+    color: #fff;
+}
+
+
+/* section content */
+
+.content {
+    padding: 20px 10px;
+    float: left;
+}
+
+.content__left {
+    width: 70%;
+    float: left;
+}
+
+
+/*  content__left--items*/
+
+.content__left--items {
+    float: left;
+    height: 150px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+
+/* items__left */
+
+.items__left {
+    width: 30%;
+    float: left;
+    height: 100%;
+}
+
+.items__left img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* items__right */
+
+.items__right {
+    width: 70%;
+    float: left;
+    height: 100%;
+    padding-left: 20px;
+}
+
+
+/* items__right--top */
+
+.items__right--top {
+    float: left;
+    width: 100%;
+    height: 130px;
+}
+
+.items__right--top a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.items__right--top a h2 {
+    line-height: 2rem;
+    font-size: 2rem;
+}
+
+
+/* items__right--bottom */
+
+.items__right--bottom {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    float: left;
+}
+
+
+/* content__right */
+
+.content__right {
+    width: 30%;
+    float: left;
+    padding: 0 20px;
+}
+
+.content__right img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 150px;
+    margin-bottom: 20px;
+}
+
+
+/* foootet */
+
+footer {
+    height: 50px;
+    float: left;
+    background-color: darkolivegreen;
+    width: 100%;
+    line-height: 50px;
+    display: block;
+    text-align: center;
+}
+
+footer h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #fff;
+}
