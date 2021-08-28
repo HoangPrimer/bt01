@@ -167,10 +167,11 @@ product-list ul li {
     width: 19%;
     position: relative;
     margin-bottom: 50px;
+    overflow: hidden;
 }
 
 product-list ul li:hover .user-action {
-    display: block;
+    top: 5px;
 }
 
 product-list ul li img {
@@ -219,9 +220,10 @@ product-list ul li.li-one p {
 
 product-list .user-action {
     position: absolute;
-    top: 5px;
+    top: -200px;
     right: 10px;
-    display: none;
+    display: block;
+    transition: .5s;
 }
 
 product-list .user-action a {
