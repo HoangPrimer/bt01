@@ -107,28 +107,28 @@ banner {
     display: block;
 }
 
-banner .slider-item {
+.slider-item {
     width: 100%;
     position: relative;
     top: 0px;
     left: 0px;
 }
 
-banner .slider-item img {
+.slider-item img {
     max-width: 100%;
 }
 
-banner .slider-item h3 {
+.slider-item h3 {
     color: #333;
     text-transform: uppercase;
     position: absolute;
     font-size: 2.5rem;
     letter-spacing: 15px;
-    left: 25%;
+    left: 15%;
     top: 40%;
 }
 
-banner .slider-item h3 p {
+.slider-item h3 p {
     color: #3bb877;
     margin-top: 10px;
 }
@@ -166,7 +166,7 @@ product-list small {
 product-list ul li {
     width: 19%;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 product-list ul li:hover .user-action {
@@ -174,7 +174,8 @@ product-list ul li:hover .user-action {
 }
 
 product-list ul li img {
-    max-width: 100%;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 product-list ul li h2 {
@@ -256,11 +257,20 @@ shipping {
 
 shipping ul {
     display: flex;
+    flex-wrap: wrap;
 }
 
 shipping ul li {
     width: 25%;
     text-align: center;
+}
+
+shipping ul li:not(:nth-of-type(4)) .shipping-content {
+    margin-top: 18px;
+}
+
+shipping ul li:nth-of-type(3) .shipping-content {
+    margin-top: 24px;
 }
 
 shipping ul li h4 {
@@ -278,6 +288,7 @@ promotion {
 
 promotion ul {
     display: flex;
+    flex-wrap: wrap;
 }
 
 promotion ul li {
@@ -302,6 +313,7 @@ promotion ul li img {
 contact {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .contact-item {
@@ -337,16 +349,17 @@ contact {
 }
 
 .left form {
-    width: 60%;
+    width: 80%;
     height: 36px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .left form input {
     height: 100%;
     text-indent: 10px;
-    width: 60%;
-    padding: 0;
-    margin: 0;
+    width: 70%;
+    border: none;
     margin-right: 10px;
 }
 
@@ -365,29 +378,32 @@ contact {
 
 .right {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .right a {
     display: block;
-    width: 25%;
+    width: calc(25% - 100px);
+    margin: 0 50px;
     height: 137px;
     background: url("../img/brand.png") no-repeat;
 }
 
 .right a:nth-of-type(1) {
-    background-position: 45px 3px;
+    background-position: 2px 3px;
 }
 
 .right a:nth-of-type(2) {
-    background-position: -182px 3px;
+    background-position: -229px 3px;
 }
 
 .right a:nth-of-type(3) {
-    background-position: -410px 3px;
+    background-position: -463px 3px;
 }
 
 .right a:nth-of-type(4) {
-    background-position: -645px 3px;
+    background-position: -695px 3px;
 }
 
 
@@ -395,8 +411,9 @@ contact {
 
 footer {
     width: 100%;
-    height: 40px;
     display: flex;
+    padding: 10px 0;
+    flex-wrap: wrap;
     background-color: #232425;
 }
 
@@ -443,4 +460,303 @@ footer {
 
 .footer-right a:nth-of-type(5) {
     background-position: -234px 0px;
+}
+
+
+/* responsive */
+
+@media only screen and (max-width:1399.97px) {
+    /* header */
+    .logo {
+        text-align: center;
+    }
+    .toolbar {
+        padding-right: 10px;
+    }
+    /* promotion */
+    promotion ul li img {
+        width: 70%;
+    }
+    /* contact */
+    .contact-item {
+        padding: 40px 0;
+    }
+    .left p,
+    .left form {
+        width: 80%;
+    }
+    .left form input {
+        width: 70%;
+    }
+    .right a {
+        width: 25%;
+        margin: 0;
+    }
+    .right a:nth-of-type(1) {
+        background-position: 10px 3px;
+    }
+    .right a:nth-of-type(2) {
+        background-position: -220px 3px;
+    }
+    .right a:nth-of-type(3) {
+        background-position: -454px 3px;
+    }
+    .right a:nth-of-type(4) {
+        background-position: -685px 3px;
+    }
+}
+
+@media only screen and (max-width:1199.97px) {
+    /* header */
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul li a {
+        padding: 0 10px;
+    }
+    /* slider */
+    .slider-item h3 {
+        font-size: 1.7rem;
+    }
+    /* product-list */
+    product-list ul {
+        justify-content: unset;
+    }
+    product-list ul li.li-one {
+        padding: 5px;
+    }
+    product-list ul li {
+        width: calc(33% - 20px);
+        margin: 0 10px 50px 10px;
+    }
+    /* contact */
+    .contact-item {
+        width: 100%;
+        padding: 30px 50px;
+    }
+    .right a {
+        width: calc(25% - 60px);
+        margin: 0 30px;
+    }
+    .right a:nth-of-type(1) {
+        background-position: 15px 3px;
+    }
+    .right a:nth-of-type(2) {
+        background-position: -220px 3px;
+    }
+    .right a:nth-of-type(3) {
+        background-position: -454px 3px;
+    }
+    .right a:nth-of-type(4) {
+        background-position: -685px 3px;
+    }
+}
+
+@media only screen and (max-width:991.97px) {
+    /* header */
+    .header-wrap {
+        justify-content: space-between;
+    }
+    .logo {
+        padding-left: 20px;
+    }
+    nav {
+        display: none;
+    }
+    .toolbar {
+        width: 16%;
+        display: flex;
+    }
+    /* slider */
+    .slider-item h3 {
+        left: 10%;
+        font-size: 2rem;
+        letter-spacing: 5px;
+    }
+    /* product-list */
+    product-list {
+        margin: 30px 0;
+    }
+    product-list ul {
+        justify-content: unset;
+    }
+    product-list ul li {
+        width: calc(50% - 20px);
+        margin: 0 10px 50px 10px;
+        text-align: center;
+    }
+    product-list ul li.li-one {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+        display: block;
+    }
+    product-list ul li.li-one h3 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    product-list ul li.li-one small {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    /* shipping */
+    shipping {
+        padding: 30px 0;
+    }
+    /* promotion ul li img */
+    promotion ul li img {
+        width: 70%;
+    }
+    /* contact */
+    .contact-item {
+        width: 100%;
+        padding: 30px 50px;
+    }
+    .left h2 {
+        margin-bottom: 10px;
+    }
+    .left p {
+        width: 80%;
+    }
+    .left form {
+        width: 80%;
+    }
+    .left form input {
+        margin-right: 0;
+        margin-right: 10px;
+    }
+    .left form button {
+        width: 40%;
+    }
+    .right a {
+        width: 25%;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width:767.97px) {
+    /* header */
+    .logo {
+        width: 35%;
+    }
+    .toolbar {
+        width: 20%;
+    }
+    /* slider */
+    .slider-item h3 {
+        font-size: 1.5rem;
+    }
+    /* shipping */
+    shipping {
+        padding: 0 0 30px;
+    }
+    shipping ul li {
+        width: 50%;
+        margin-top: 30px;
+    }
+    /* promotion */
+    promotion ul li img {
+        width: 90%;
+    }
+    promotion ul li {
+        padding: 10px 0;
+    }
+    /* contact */
+    .left p {
+        width: 100%;
+    }
+    .left form {
+        width: 100%;
+    }
+    .right {
+        padding: 30px 0;
+    }
+    .right a:nth-of-type(1) {
+        background-position: 5px 3px;
+    }
+    .right a:nth-of-type(2) {
+        background-position: -235px 3px;
+    }
+    .right a:nth-of-type(3) {
+        background-position: -460px 3px;
+    }
+    .right a:nth-of-type(4) {
+        background-position: -685px 3px;
+    }
+    /* footer */
+    .footer-left {
+        width: 100%;
+        order: 1;
+    }
+    .footer-right {
+        width: 100%;
+        order: 0;
+    }
+}
+
+@media only screen and (max-width:567.97px) {
+    /* header */
+    .logo {
+        width: 60%;
+    }
+    .logo a {
+        font-size: 1.2rem;
+    }
+    .toolbar {
+        width: 35%;
+    }
+    /* slider */
+    .slider-item h3 {
+        font-size: 1.2rem;
+        letter-spacing: unset;
+    }
+    .slider-item h3 p {
+        margin-top: 5px;
+    }
+    /* product-list */
+    product-list ul li.li-one h3 {
+        font-size: 1.5rem;
+    }
+    product-list ul li.li-one p {
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+    /* promotion */
+    promotion ul li {
+        width: 100%;
+    }
+    promotion ul li img {
+        max-width: 200px;
+        max-height: 200px;
+    }
+    /* contact */
+    .contact-item {
+        padding: 20px;
+    }
+    .left h2 {
+        font-size: 1.6rem;
+    }
+    .right a {
+        min-width: 140px;
+    }
+    .right a:nth-of-type(1) {
+        background-position: 5px 3px;
+    }
+    .right a:nth-of-type(2) {
+        background-position: -225px 3px;
+    }
+    .right a:nth-of-type(3) {
+        background-position: -460px 3px;
+    }
+    .right a:nth-of-type(4) {
+        background-position: -690px 3px;
+    }
+    /* footer */
+    .footer-right {
+        justify-content: space-between;
+    }
+    .footer-right a {
+        margin: 0;
+    }
 }
