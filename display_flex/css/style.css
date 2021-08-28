@@ -174,7 +174,7 @@ product-list ul li:hover .user-action {
 }
 
 product-list ul li img {
-    width: 100%;
+    max-width: 100%;
     margin-bottom: 20px;
 }
 
